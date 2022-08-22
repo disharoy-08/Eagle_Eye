@@ -1,0 +1,81 @@
+.content {
+    background: rgb(202, 196, 196);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.Team {
+    background-color: #1CD6CE;
+    text-align: center;
+    height: 50px;
+    padding-top: 5px 0 5px 0;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #131324;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  
+.home {
+    flex: 3;
+    margin-left: 5%;
+}
+
+.wrapper {
+    padding: 15px;
+    display: flex;
+    background-color:rgba(2, 4, 0, 0.2);;
+}
+
+.add {
+    flex: 3;
+}
+
+.rep {
+    flex: 3;
+}
+
+.att {
+    flex: 3;
+}
+.container {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.container-fluid {
+    background-color:#2A82D9;;
+    line-height: 50px;
+   
+}
+.wrap{
+    justify-content: space-evenly;
+    background-color:rgba(32, 166, 106, 0.33);
+    padding: 15px;
+}
+.link-primary{
+    flex: 1;
+   outline-color: black;
+   text-align: center;
+}
+.time1{
+    border: 1px solid black;
+    display: inline-flex
+    
+}
+.time2{
+    border: 1px solid black;
+    display: inline-flex
+   
+}

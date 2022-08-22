@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Eagle-Eye/Report</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="Team">
+                <h1>Eagle-Eye</h1>
+            </div>
+            <ul class="title">
+                <li> <a href="index01.html">Home</a></li>
+                <li> <a href="index02.html">Address</a></li>
+                <li><a href="index03.html">Report</a></li>
+                <li><a href="index04.html">Attack</a></li>
+            </ul>
+            <div class="table">
+                <table id="data" class="table table-striped">
+                        <tr>
+                            {% for header in headings %}
+                            <th>{{ header }}</th>
+                            {% endfor %}
+                        </tr>                  
+                        <tr>
+                            {% for sips in sIp %}
+                            <td>{{ sips }}</td>
+                            {% endfor %}
+                            {% for dips in dIp %}
+                            <td>{{ dips }}</td>
+                            {% endfor %}
+                            {% for sports in sPort %}
+                            <td>{{ sports }}</td>
+                            {% endfor %}
+                            {% for dports in dPort %}
+                            <td>{{ dports }}</td>
+                            {% endfor %}
+                        </tr>
+                                       
+                </table>
+            </div>
+
+
+        </header>
+    </main>
+</body>
+
+</html>
